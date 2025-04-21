@@ -19,7 +19,6 @@ import java.util.Optional;
 @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/tip-reports")
-@CrossOrigin
 public class TipReportController {
 
     @Autowired
