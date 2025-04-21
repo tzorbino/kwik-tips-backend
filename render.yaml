@@ -1,8 +1,7 @@
 services:
   - type: web
     name: kwik-tips-backend
-    buildCommand: "./gradlew build"
-    startCommand: "java -jar build/libs/kwiktips-0.0.1-SNAPSHOT.jar"
+    runtime: docker
     plan: free
     envVars:
       - key: DB_URL
@@ -11,3 +10,4 @@ services:
         sync: false
       - key: DB_PASSWORD
         sync: false
+
